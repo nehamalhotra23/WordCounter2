@@ -13,16 +13,12 @@ public class Program
         Regex regex = new Regex(@"^[0-9]+$");
         Match wordMatch = regex.Match(inputWord);
         Match sentenceMatch = regex.Match(inputSentence);
-
+        int repeats = newWord.CountRepetedWord(); 
         if (wordMatch.Success && sentenceMatch.Success){
          Console.WriteLine("Invalid Input. Please type a word or sentence");
          Main();
         } else {
-        newWord.GetWordInput(word);
-        newWord.SearchingForSentence(sentence);
-            newWord.CountRepetedWord();
-
-            Console.WriteLine(RepeatCounterFunction() );
+          Console.WriteLine(repeats);
         }
     }
 }
