@@ -11,7 +11,7 @@ namespace Word.Tests
     public void CountingWords_noOfWords_Int() {
      
     
-     RepeatWord newWord = new RepeatWord("hello");
+     RepeatWord newWord = new RepeatWord();
      int output = newWord.RepeatCounterFunction();
      Assert.AreEqual(output, 0);
 
@@ -20,8 +20,9 @@ namespace Word.Tests
     [TestMethod]
     public void CountingWordsOne_noOfWords_String() {
      
-     string input = "hello";
+     string input = "hello World";
      RepeatWord newWord = new RepeatWord();
+     newWord.GetWordInput(input);
      string output = newWord.FindWordAndSetIt();
      Assert.AreEqual(output, input);
 
@@ -31,19 +32,19 @@ namespace Word.Tests
     public void InputtedSentence_SenetenceForSearch_String() {
      
      string input = "hello World";
-     
+     RepeatWord newWord = new RepeatWord();
      newWord.SearchingForSentence(input);
-     string stringOutput = 
+     string output = newWord.GetUserSentence();
      Assert.AreEqual(output, input);
 
+    }
 
+
+   }
 
 
    }
 
 
-   }
-
-}
 
 

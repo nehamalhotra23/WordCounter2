@@ -8,28 +8,30 @@ namespace Word {
         public string SentenceSearch;
 
        
-        public void RepeatWordChecker() 
+        public RepeatWord() 
         {
-           InputtedWord = inputtedWord;
+           _CountWord = 0;
 
-        }  
+        } 
 
-         public string FindWordAndSetIt() {
-             return InputtedWord;
-         }
-        public void CountingWord() 
-        {
-            _CountWord = 0;
-        }
          public int RepeatCounterFunction() 
          {
              return _CountWord;
-         } 
-       
+         }  
+
+
+        public void GetWordInput(string inputtedWord) 
+
+        {
+            InputtedWord = inputtedWord;
+        }
+         public string FindWordAndSetIt() {
+             return InputtedWord;
+         }
 
          public void SearchingForSentence(string inputtedSentence)
          {
-               SentenceSearch = inputtedSentence;
+               SentenceSearch = InputtedSentence;
          }
 
          public string GetUserSentence() 
