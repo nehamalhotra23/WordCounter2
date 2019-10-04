@@ -34,7 +34,24 @@ namespace Word.Tests
      RepeatWord newWord = new RepeatWord();
      newWord.SearchingForSentence(input);
      string output = newWord.GetUserSentence();
-     Assert.AreEqual(output, input);
+      Assert.AreEqual(output, input);
+
+    }
+
+    [TestMethod]
+
+    public void CountRepeatedWord_IncreaseCount_Int() 
+    {
+        string word = "Hello";
+        string sentence = "Hello hello World";
+        RepeatWord newWord = new RepeatWord();
+        newWord.GetWordInput(word);
+        newWord.SearchingForSentence(sentence);
+        newWord.GetUserSentence();
+
+        int result = newWord.CountRepetedWord();
+        Assert.AreEqual(result, 2);
+
 
     }
 

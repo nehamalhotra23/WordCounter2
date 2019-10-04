@@ -42,16 +42,22 @@ namespace Word {
              return Sentence;
          }
             
-        // public int CountRepetedWord() 
-        // {
-        //    foreach(string Inputtedword in SentenceSearch) 
-        //    {
-        //        if(InputtedWord == SentenceSearch) 
-        //        {
-
-        //        }
-        //    }
-        // }
+        public int CountRepetedWord() 
+        {
+           string foundWord = InputWord;
+           string foundSentence = Sentence;
+           string[] array = foundSentence.Split();
+           foreach(string inputword in array) 
+           {
+               
+               if(foundSentence.Contains(InputWord)) 
+               {
+                   CountWord += 1;
+                   Console.WriteLine(CountWord);
+               }
+           }
+           return CountWord;
+        }
 
     }
 }
