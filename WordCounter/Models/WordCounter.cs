@@ -17,6 +17,10 @@ namespace Word {
          {
              return CountWord;
          } 
+
+        //  public string FindWordAndSetIt() {
+             
+        //  }
         
 
 

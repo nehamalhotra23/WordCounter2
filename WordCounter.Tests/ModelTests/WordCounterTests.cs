@@ -10,12 +10,25 @@ namespace Word.Tests
     [TestMethod]
     public void CountingWords_noOfWords_Int() {
      
-     string input = "word";
+     string input = "hello";
      RepeatWord newWord = new RepeatWord(input);
      int output = newWord.RepeatCounterFunction();
-     Assert.AreEqual(output, 1);
+     Assert.AreEqual(output, 0);
 
     }
+
+    // [TestMethod]
+    // public void CountingWordsOne_noOfWords_String() {
+     
+    //  string input = "hello";
+    //  RepeatWord newWord = new RepeatWord(input);
+    //  string output = newWord.RepeatWord(input);
+    //  Assert.AreEqual(output, input);
+
+    // }
+
+
+
 
 
    }
