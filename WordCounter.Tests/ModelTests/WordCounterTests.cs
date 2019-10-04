@@ -44,9 +44,9 @@ namespace Word.Tests
     {
         string word = "hello";
         string sentence = "hello hello World";
-        RepeatWord newWord = new RepeatWord();
-         newWord.GetWordInput(word);
-        newWord.SearchingForSentence(sentence);
+        RepeatWord newWord = new RepeatWord(word, sentence);
+        //  newWord.GetWordInput(word);
+        // newWord.SearchingForSentence(sentence);
         newWord.GetUserSentence();
 
         int result = newWord.CountRepetedWord();

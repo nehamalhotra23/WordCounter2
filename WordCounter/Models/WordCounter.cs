@@ -13,6 +13,12 @@ namespace Word {
            CountWord = 0;
 
         } 
+
+        public RepeatWord(string inputWord, string inputSentence)
+        {
+            InputWord = inputWord;
+            Sentence = inputSentence;
+        }
          //returning value of no. Word 
          public int RepeatCounterFunction() 
          {
