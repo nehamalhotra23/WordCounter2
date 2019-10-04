@@ -44,8 +44,8 @@ namespace Word {
             
         public int CountRepetedWord() 
         {
-           string foundWord = InputWord;
-           string foundSentence = Sentence;
+           string foundWord = InputWord.ToLower();
+           string foundSentence = Sentence.ToLower();
            string[] array = foundSentence.Split();
            foreach(string inputword in array) 
            {

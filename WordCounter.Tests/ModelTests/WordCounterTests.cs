@@ -42,10 +42,10 @@ namespace Word.Tests
 
     public void CountRepeatedWord_IncreaseCount_Int() 
     {
-        string word = "Hello";
-        string sentence = "Hello hello World";
+        string word = "hello";
+        string sentence = "hello hello World";
         RepeatWord newWord = new RepeatWord();
-        newWord.GetWordInput(word);
+         newWord.GetWordInput(word);
         newWord.SearchingForSentence(sentence);
         newWord.GetUserSentence();
 
