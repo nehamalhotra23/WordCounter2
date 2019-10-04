@@ -16,11 +16,12 @@ namespace Word.Tests
        
        newWord.GetWordInput(input);
        string output = newWord.FindWordAndSetIt();
+       
        Assert.AreEqual(output, input);
 
     }
 
-        [TestMethod]
+     [TestMethod]
     public void InputtedSentence_Senetence_String() {
      
         string input = "hello World";
@@ -28,11 +29,12 @@ namespace Word.Tests
         
         newWord.SearchingForSentence(input);
         string output = newWord.GetUserSentence();
+        
         Assert.AreEqual(output, input);
 
     }
 
-    [TestMethod]
+      [TestMethod]
 
     public void CountRepeatedWord_IncreaseCount_Int() 
     {
@@ -43,8 +45,8 @@ namespace Word.Tests
         newWord.GetWordInput(word);
         newWord.SearchingForSentence(sentence);
         newWord.GetUserSentence();
-
         int result = newWord.CountRepetedWord();
+        
         Assert.AreEqual(result, 3);
     }
       
@@ -58,8 +60,8 @@ namespace Word.Tests
         newWord.GetWordInput(word);
         newWord.SearchingForSentence(sentence);
         newWord.GetUserSentence();
-
         int result = newWord.CountRepetedWord();
+        
         Assert.AreEqual(result, 0);
 
 
