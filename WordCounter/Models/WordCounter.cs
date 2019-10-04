@@ -3,25 +3,43 @@ using System;
 namespace Word {
 
     public class RepeatWord {
-        public int CountWord {get; set;} = 0;
+        private int _CountWord;
         public string InputtedWord;
         public string SentenceSearch;
 
        
-        public RepeatWord(string inputWord) 
+        public void RepeatWordChecker() 
         {
-           InputtedWord = inputWord;
+           InputtedWord = inputtedWord;
+
+        }  
+
+         public string FindWordAndSetIt() {
+             return InputtedWord;
+         }
+        public void CountingWord() 
+        {
+            _CountWord = 0;
         }
-        
          public int RepeatCounterFunction() 
          {
-             return CountWord;
+             return _CountWord;
          } 
+       
 
-        //  public string FindWordAndSetIt() {
-             
-        //  }
+         public void SearchingForSentence(string inputtedSentence)
+         {
+               SentenceSearch = inputtedSentence;
+         }
+
+         public string GetUserSentence() 
+         {
+             return SentenceSearch;
+         }
+            
         
+
+         
 
 
 
