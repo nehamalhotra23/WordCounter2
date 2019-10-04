@@ -10,7 +10,6 @@ namespace Word.Tests
     [TestMethod]
     public void CountingWords_noOfWords_Int() {
      
-    
      RepeatWord newWord = new RepeatWord();
      int output = newWord.RepeatCounterFunction();
      Assert.AreEqual(output, 0);
@@ -18,7 +17,7 @@ namespace Word.Tests
     }
 
     [TestMethod]
-    public void CountingWordsOne_noOfWords_String() {
+    public void MatchingWords_Words_String() {
      
      string input = "hello World";
      RepeatWord newWord = new RepeatWord();
@@ -29,7 +28,7 @@ namespace Word.Tests
     }
 
         [TestMethod]
-    public void InputtedSentence_SenetenceForSearch_String() {
+    public void InputtedSentence_Senetence_String() {
      
      string input = "hello World";
      RepeatWord newWord = new RepeatWord();
@@ -40,10 +39,9 @@ namespace Word.Tests
     }
 
 
-   }
+}
 
-
-   }
+}
 
 
 
