@@ -17,7 +17,8 @@ public class Program
         if (wordMatch.Success && sentenceMatch.Success){
          Console.WriteLine("Invalid Input. Please type a word or sentence");
          Main();
-
+        } else if (inputWord.Contains(" ")) {
+            Console.WriteLine("You can only search for one word");
         } else {
           Console.WriteLine("Number of match availabe " + repeats);
         }
