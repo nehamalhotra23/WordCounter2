@@ -7,19 +7,7 @@ namespace Word {
         public string InputWord;
         public string Sentence;
          
-         //initially value of no. of words is 0
-        public RepeatWord() 
-        {
-           CountWord = 0;
-
-        } 
-         //returning value of no. Word 
-         public int RepeatCounterFunction() 
-         {
-             return CountWord;
-         }  
-
-        // Inputted user's word
+         // Inputted user's word
         public void GetWordInput(string inputWord) 
 
         {

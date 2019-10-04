@@ -7,14 +7,6 @@ namespace Word.Tests
    [TestClass]
    public class NumberOfWords {
     
-    [TestMethod]
-    public void CountingWords_noOfWords_Int() {
-     
-     RepeatWord newWord = new RepeatWord();
-     int output = newWord.RepeatCounterFunction();
-     Assert.AreEqual(output, 0);
-
-    }
 
     [TestMethod]
     public void MatchingWords_Words_String() {
