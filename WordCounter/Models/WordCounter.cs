@@ -20,21 +20,22 @@ namespace Word {
         }
         //setting value of user's word
          public string FindWordAndSetIt() {
-             return InputWord;
+            return InputWord;
         }
          
         // inputted user's sentence 
          public void SearchingForSentence(string inputSentence)
         {
-               Sentence = inputSentence;
+            Sentence = inputSentence;
         }
         
-        // returning value of user's sentence
+        // setting value of user's sentence
          public string GetUserSentence() 
         {
-             return Sentence;
+            return Sentence;
         }
             
+        //checking no. of repeated words
         public int CountRepetedWord() 
         {
            string foundWord = InputWord.ToLower();
