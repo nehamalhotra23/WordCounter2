@@ -50,6 +50,8 @@ namespace Word {
            for (int i = 0; i < array.Length; i++) {
                if (array[i] == foundWord) {
                    CountWord += 1;
+               } else {
+                   Console.WriteLine("No match available");
                }
                
            }
