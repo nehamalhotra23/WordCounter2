@@ -43,17 +43,33 @@ namespace Word.Tests
     public void CountRepeatedWord_IncreaseCount_Int() 
     {
         string word = "hello";
-        string sentence = "hello hello World";
-        RepeatWord newWord = new RepeatWord(word, sentence);
-        //  newWord.GetWordInput(word);
-        // newWord.SearchingForSentence(sentence);
+        string sentence = "hello hello hello World";
+        RepeatWord newWord = new RepeatWord();
+         newWord.GetWordInput(word);
+        newWord.SearchingForSentence(sentence);
         newWord.GetUserSentence();
 
         int result = newWord.CountRepetedWord();
-        Assert.AreEqual(result, 2);
+        Assert.AreEqual(result, 3);
 
 
     }
+      [TestMethod]
+    public void CountNoRepeatedWord_DecreaseCount_Int() 
+    {
+        string word = "hello";
+        string sentence = "World is beautiful";
+        RepeatWord newWord = new RepeatWord();
+         newWord.GetWordInput(word);
+        newWord.SearchingForSentence(sentence);
+        newWord.GetUserSentence();
+
+        int result = newWord.CountRepetedWord();
+        Assert.AreEqual(result, 0);
+
+
+    }
+
 
 
 }

@@ -13,12 +13,6 @@ namespace Word {
            CountWord = 0;
 
         } 
-
-        public RepeatWord(string inputWord, string inputSentence)
-        {
-            InputWord = inputWord;
-            Sentence = inputSentence;
-        }
          //returning value of no. Word 
          public int RepeatCounterFunction() 
          {
@@ -52,15 +46,12 @@ namespace Word {
         {
            string foundWord = InputWord.ToLower();
            string foundSentence = Sentence.ToLower();
-           string[] array = foundSentence.Split();
-           foreach(string inputword in array) 
-           {
-               
-               if(foundSentence.Contains(InputWord)) 
-               {
+           string[] array = foundSentence.Split(" ");
+           for (int i = 0; i < array.Length; i++) {
+               if (array[i] == foundWord) {
                    CountWord += 1;
-                   Console.WriteLine(CountWord);
                }
+               
            }
            return CountWord;
         }
