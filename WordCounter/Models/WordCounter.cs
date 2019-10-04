@@ -6,10 +6,15 @@ namespace Word {
         public int CountWord;
         public string InputWord;
         public string Sentence;
+
+        public RepeatWord(string inputWord, string inputSentence)
+        {
+            InputWord = inputWord;
+            Sentence = inputSentence;
+        }
          
          // Inputted user's word
         public void GetWordInput(string inputWord) 
-
         {
             InputWord = inputWord;
         }
@@ -38,9 +43,7 @@ namespace Word {
            for (int i = 0; i < array.Length; i++) {
                if (array[i] == foundWord) {
                    CountWord += 1;
-               } else {
-                   Console.WriteLine("No match available");
-               }
+               } 
                
            }
            return CountWord;

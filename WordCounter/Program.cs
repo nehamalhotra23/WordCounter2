@@ -9,7 +9,7 @@ public class Program
         string inputWord = Console.ReadLine();
         Console.WriteLine("Type a sentence");
         string inputSentence = Console.ReadLine();
-        RepeatWord newWord = new RepeatWord();
+        RepeatWord newWord = new RepeatWord(inputWord, inputSentence);
         Regex regex = new Regex(@"^[0-9]+$");
         Match wordMatch = regex.Match(inputWord);
         Match sentenceMatch = regex.Match(inputSentence);
@@ -17,8 +17,9 @@ public class Program
         if (wordMatch.Success && sentenceMatch.Success){
          Console.WriteLine("Invalid Input. Please type a word or sentence");
          Main();
+
         } else {
-          Console.WriteLine(repeats);
+          Console.WriteLine("Number of match availabe " + repeats);
         }
     }
 }
