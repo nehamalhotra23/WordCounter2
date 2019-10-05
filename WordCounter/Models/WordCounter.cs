@@ -6,47 +6,54 @@ namespace Word {
         public int CountWord;
         public string InputWord;
         public string Sentence;
-
-        public RepeatWord(string inputWord, string inputSentence)
-        {
-            InputWord = inputWord;
-            Sentence = inputSentence;
-        }
          
-         // Inputted user's word
+         
+        public RepeatWord() 
+        {
+            CountWord = 0;
+        }
+        public RepeatWord(string inputWord, string inputSentence) 
+        {
+           InputWord = inputWord;
+           Sentence = inputSentence;
+
+        } 
+        
+        // Inputted user's word
         public void GetWordInput(string inputWord) 
         {
             InputWord = inputWord;
         }
         //setting value of user's word
-         public string FindWordAndSetIt() {
+        public string FindWordAndSetIt() 
+        {
             return InputWord;
         }
          
         // inputted user's sentence 
-         public void SearchingForSentence(string inputSentence)
+        public void SearchingForSentence(string inputSentence)
         {
             Sentence = inputSentence;
         }
         
-        // setting value of user's sentence
-         public string GetUserSentence() 
+        // returning value of user's sentence
+        public string GetUserSentence() 
         {
             return Sentence;
         }
             
-        //checking no. of repeated words
         public int CountRepetedWord() 
         {
            string foundWord = InputWord.ToLower();
            string foundSentence = Sentence.ToLower();
            string[] array = foundSentence.Split(" ");
-           for (int i = 0; i < array.Length; i++) {
+
+            for (int i = 0; i < array.Length; i++) {
                if (array[i] == foundWord) {
-                   CountWord += 1;
-                } 
+                CountWord += 1;
+            } 
                
-        }
+            }
            return CountWord;
         }
 

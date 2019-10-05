@@ -14,6 +14,7 @@ public class Program
         Match wordMatch = regex.Match(inputWord);
         Match sentenceMatch = regex.Match(inputSentence);
         int repeats = newWord.CountRepetedWord(); 
+       
         if (wordMatch.Success || sentenceMatch.Success){
          Console.WriteLine("Invalid Input. Please type a Word or Sentence");
          Main();
